@@ -1,0 +1,16 @@
+# Enable the Rewrite Engine
+RewriteEngine On
+
+# Check if the request is not for a file or directory
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite clean URLs to subdirectory paths
+RewriteRule ^home$ /FWILD/pages/home/home.html [L]
+RewriteRule ^about$ /FWILD/pages/about/about.html [L]
+RewriteRule ^features$ /FWILD/pages/features/features.html [L]
+RewriteRule ^downloads$ /FWILD/pages/downloads/downloads.html [L]
+RewriteRule ^contact$ /FWILD/pages/contact/contact.html [L]
+
+# Default rule for the root URL
+RewriteRule ^$ /FWILD/pages/home/home.html [L]
