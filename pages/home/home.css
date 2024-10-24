@@ -152,7 +152,7 @@ header {
 
 .hero-content-top {
     position: absolute;
-    top: 0%;
+    top: -1%;
     left: 0;
     right: 0;
     text-align: center;
@@ -175,7 +175,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    top: 11.5%;
+    top: 8%;
     width: 90%;
     max-width: 900px;
     background-color: #dffbeb;
